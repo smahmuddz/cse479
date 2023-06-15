@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Problem 4</title>
     <style>
-     div{
-         padding: 30px;
-         border: 2px solid white;
-     }
-     .a{
-         width: 180px;
-         background: green;
-         margin: auto;
-     }
-     .b{
-         background: red;
-     }
-     .c{
-         background: yellow;
-     }
-     .d{
-         background: blue;
-     }
-     .e{
-         padding: 1px;
-         background: white;
-     }
-    </style>
+        table{
+            border-color: white;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        </style>
 </head>
 <body>
-    <div class="a">
-      <div class="b">
-          <div class="c">
-              <div class="d">
-                  <div class="e"></div>
-              </div>
-          </div>
-      </div>
-    </div>
+<table border="1" style="height: 100px; width: 100px; background-color: green;">
+<tr>
+<td>
+    <table border="1" style="height: 80px; width: 80px; background-color: red;">
+        <tr>
+            <td>
+                <table border="1" style="height: 60px; width: 60px; background-color: yellow;"> 
+                <tr>
+                    <td>
+                        <table border="1" style="height: 40px; width: 40px; background-color: blue;">
+                        <tr>
+                            <td>
+                                <table border="1" style="height: 5px; width: 5px; background-color: white;">
+                                <tr>
+                                    <td>
+                                        <table border="1" style="height: 1px; width: 1px; background-color: white; border-color: blue;" >
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+</td>
+</tr>
+
+</table>
 </body>
 </html>
