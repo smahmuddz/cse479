@@ -4,97 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Problem 1</title>
     <style>
-        body
-        {
-            background: orange;
+    body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130vh;
+            margin: 0;
         }
-    .header{
-        
-        padding: 1%;
-        padding-left: 5px;
-        color: yellow;
-    }
-    .formbox{
-        background: navy;
-    }
+        .container {
+            border: solid;
+        }
     </style>
 </head>
-<body>
-    <div class="header">
-        <p>Sign Up</p>
-    </div>
-        <div>
-        <form action="" method="post" style="padding:10px; color: yellow; background:midnightblue">
-        <table>
-            <tr>
-                <td><label for="fname">First Name:</label></td>
-                <td><input type="text" name="fname" id="" placeholder="Enter First Name..."></td>
-            </tr>
-            <tr>
-                    <td><label for="lname">Last Name:</label></td>
-                    <td><input type="text" name="lname" id="" placeholder="Enter Last Name..."></td>
-            </tr>
-            <tr>
-                    <td><label for="sname">Screen Name:</label></td>
-                    <td><input type="text" name="sname" id="" placeholder="Enter Screen Name..."></td>
-            </tr>
-            <tr>
-                <td><label for="dob">Date of Birth</label></td>
-                <td><select name="m" id="month">
-                        <option val="">Month</option>
-                        <option val="1">January</option>
-                        <option val="2">February</option>
-                        <option val="3">March</option>
-                        <option val="4">April</option>
-                        <option val="5">May</option>
-                        <option val="6">June</option>
-                        <option val="7">July</option>
-                        <option val="8">August</option>
-                        <option val="9">September</option>
-                        <option val="10">October</option>
-                        <option val="11">November</option>
-                        <option val="12">December</option>
-                </select>
-                <select name="d" id="day"> 
-                        <option value="">Day</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                </select>
+<body >
+    <div class="container" style="border:solid; padding: 15px">
+    <h1>Registration Form</h1>
+    <form action="" method="post">
+    <table>
+        <tr>
+            <td><label for="uid">User Id:</label></td>
+            <td><input type="text" minlength="5" maxlength="12" name="userid" id="uid"></td>
+        </tr>
+        <tr>
+            <td><label for="pwd">Password:</td>
+            <td><input type="password" minlength="7" maxlength="12" name="password" id="pwd"></label></td>
+        </tr>
+        <tr>
+            <td><label for="nm">Name:</label></td>
+            <td colspan="2">
+                    <input type="text" pattern="[A-Za-z]+" name="name" id="nm" style="width: 80%;" required>
             </td>
-            </tr>
-        </table>
-        </form>
-        </div>
+        </tr>
+        <tr>
+            <td><label for="adrs">Address:</label></td>
+            <td><input type="text" pattern="[A-Za-z]+" style="width:80%" name="address" id="adrs" required></td>
+        </tr>
+        <tr>
+            <td><label for="cnt">Country:</label></td>
+            <td> <select name="group" id="group">
+                    <option val="">Please Select a country</option>
+                    <option val="1">Bangladesh</option>
+                    <option val="2">India</option>
+                    <option val="3">Nepal</option>
+                    <option val="4">England</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label for="zip">ZIP Code:</label></td>
+            <td><input type="text" pattern="[0-9]+" name="zip" id="zip"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" style="width:80%" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="sex">Sex:</label></td>
+            <td><input type="radio" value="male"> Male <input type="radio" value="female"> Female </td>
+        </tr>
+        <tr>
+            <td><label for="Language">Language:</label></td>
+            <td> <input type="checkbox" value="English"> English <input type="checkbox" value="non english"> Non English </td>
+        </tr>
+        <tr>
+            <td> <label for="textarea">About:
+                </label></td>
+            <td><textarea style="width:80%" name="about" id="textarea" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+                <td align="center" colspan="2"><button class="submitbox" type="submit"><b>Submit</b></button></td>
+        </tr>
+    </table>
+</form>
+    <br>    
+</div>
+    
 </body>
 </html>
