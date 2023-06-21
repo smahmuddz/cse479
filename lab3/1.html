@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem 1</title>
+    <style>
+    body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130vh;
+            margin: 0;
+        }
+        .container {
+            border: solid;
+        }
+    </style>
+</head>
+<body >
+    <div class="container" style="border:solid; padding: 15px">
+    <h1>Registration Form</h1>
+    <form action="" method="post">
+    <table>
+        <tr>
+            <td><label for="uid">User Id:</label></td>
+            <td><input type="text" minlength="5" maxlength="12" name="userid" id="uid"></td>
+        </tr>
+        <tr>
+            <td><label for="pwd">Password:</td>
+            <td><input type="password" minlength="7" maxlength="12" name="password" id="pwd"></label></td>
+        </tr>
+        <tr>
+            <td><label for="nm">Name:</label></td>
+            <td colspan="2">
+                    <input type="text" pattern="[A-Za-z]+" name="name" id="nm" style="width: 80%;" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="adrs">Address:</label></td>
+            <td><input type="text" pattern="[A-Za-z]+" style="width:80%" name="address" id="adrs" required></td>
+        </tr>
+        <tr>
+            <td><label for="cnt">Country:</label></td>
+            <td> <select name="group" id="group">
+                    <option val="">Please Select a country</option>
+                    <option val="1">Bangladesh</option>
+                    <option val="2">India</option>
+                    <option val="3">Nepal</option>
+                    <option val="4">England</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label for="zip">ZIP Code:</label></td>
+            <td><input type="text" pattern="[0-9]+" name="zip" id="zip"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" style="width:80%" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="sex">Sex:</label></td>
+            <td><input type="radio" value="male"> Male <input type="radio" value="female"> Female </td>
+        </tr>
+        <tr>
+            <td><label for="Language">Language:</label></td>
+            <td> <input type="checkbox" value="English"> English <input type="checkbox" value="non english"> Non English </td>
+        </tr>
+        <tr>
+            <td> <label for="textarea">About:
+                </label></td>
+            <td><textarea style="width:80%" name="about" id="textarea" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+                <td align="center" colspan="2"><button class="submitbox" type="submit"><b>Submit</b></button></td>
+        </tr>
+    </table>
+</form>
+    <br>    
+</div>
+    
+</body>
+</html>
