@@ -8,19 +8,25 @@
 </head>
 <body>
 <?php
+$sum=0;
 $prime=1000;
 while($prime<=3000)
 {
 $count=0;
-for($i=1;$i<$prime;$i++)
+for($i=1;$i<=$prime;$i++)
     {
      if(($prime % $i)==0)
      {$count++;}   
     }
     if($count<=2)
-    {echo $prime,"<br>";}
+    {
+    echo $prime,"<br>";
+    $sum+=$prime;
+    }
 $prime++;
 }
+
+echo "<br>The Sum of all prime is: $sum";
 
 ?>
 </body>
