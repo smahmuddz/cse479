@@ -21,7 +21,7 @@ $student2 = new Student("Samiha", "2019-3-60-100", 3.99);
 $c1 = $student1->getCGPA();
 $c2 = $student2->getCGPA();
 $avg = ($c1+$c2)/2;
-echo "CGPA OF Student 1 is : $c1 <br>";
-echo "CGPA OF Student 2 is : $c2 <br>";
+echo "CGPA OF <b>{$student1->getName()}</b> is : $c1 <br>";
+echo "CGPA OF <b>{$student2->getName()}</b> is : $c2 <br>";
 echo "Average CGPA is : $avg";
 ?>

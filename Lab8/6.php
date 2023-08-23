@@ -25,7 +25,7 @@ class Account {
         $this->showInformation();
     }
     public function transferMoney($bankAcc, $amount) {
-        if ($amount <= $this->accountBalance) {
+        if (($amount <= $this->accountBalance) && ($this->accountID != $bankAcc->accountID)) {
             $this->accountBalance = $this->accountBalance  - $amount;
             $bankAcc->deposit($amount);
             echo "Transferred: $amount to Account ID: {$bankAcc->accountID}<br>";
