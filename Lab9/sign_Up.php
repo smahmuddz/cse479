@@ -73,7 +73,6 @@
             if (!preg_match($email_pattern, $email)) {
                 $error = "Invalid email address";
             }
-            $email="";
         }
         if (!empty($_POST["type"])) {
             $type = input_validation($_POST["type"]);

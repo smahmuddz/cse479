@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Homepage</title>
     <style type="text/css">
         table {
             border: 1px solid black;
@@ -23,7 +23,7 @@
 <body>
     <?php
     include('session.php');
-    echo "<h1>Welcome " . $id . "!</h1>";
+    echo "<h1>Welcome " . $name . "!</h1>";
     echo "<table>";
     echo "<tr><th><a href='profile.php'>Profile</a></th></tr>";
     echo "<tr><th><a href='change_password.php'>Change Password</a></th></tr>";

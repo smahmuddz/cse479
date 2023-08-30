@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registration</title>
+    <title>Login</title>
     <style type="text/css">
         fieldset {
             border: 1px solid black;

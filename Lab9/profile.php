@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Profile</title>
     <style type="text/css">
         table {
             border: 1px solid black;
